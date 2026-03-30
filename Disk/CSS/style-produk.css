@@ -1,0 +1,804 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:"poppins" , sans-serif;
+}
+
+/* warna */
+:root{
+    --primary-color: #020024;
+    --primary-color-two: #090979;
+    --secondary-color: #00D4FF;
+    --text-color: #ffffff;
+    --text-color-two: #01010D;
+    --text-color-opacity: #ffffff8a;
+    --bc-color: #010305;
+    --text-icon: #0BE30B;
+    --text-icon-two: #0645CC;
+    --text-icon-three: #EB0C40;
+    --bc-color-2: #e4edef;
+}
+/* warna */
+
+/* Navbar */
+.container{
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    position: fixed;
+    z-index: 1000;
+    transition: all .3s ease;
+    background-color: var(--bc-color);
+}
+
+.navbar .navbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-box .logo img{
+    width: 55px;
+    height: 50px;
+}
+
+.navbar .navbar-box .menu{
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar .navbar-box .menu li{
+    list-style: none;
+}
+
+.navbar .navbar-box .menu li a{
+    text-decoration: none;
+    color: var(--text-color-opacity);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar.nav-scroll-active{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur (20px);
+    padding: 15px 0 15px 0;
+}
+
+.navbar .navbar-box .hamburger{
+    display: none;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar .navbar-box .hamburger .hamburger-box{
+    width: 30px;
+}
+
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner,
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner::after,
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner::before {
+    width: 30px;
+}
+
+.navbar .navbar-box .menu li a:hover{
+    color: var(--text-color);
+}
+
+.navbar.navbar.nav-scroll-active .navbar-box .logo h1{
+    color: var(--text-color);
+}
+
+.navbar.navbar.nav-scroll-active .navbar-box .menu li a{
+    color: var(--text-color);
+}
+.navbar.navbar.nav-scroll-active .navbar-box .menu li a:hover{
+    color: var(--secondary-color);
+}
+/* Navbar */
+
+/* Header */
+.header {
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(../../assets/image/Background/Produk.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 190px;
+    overflow: hidden; 
+}
+
+.header .header-box{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 30px;
+}
+/* Header */
+
+/* back */
+.back{
+    padding: 20px;
+    background-color: var(--bc-color-3);
+}
+.back .back-box{
+    padding-top: 10px;
+}
+
+.back .back-box p{
+    font-size: 15px;
+}
+
+.back .back-box li{
+    list-style: none;
+}
+
+.back .back-box li a{
+    text-decoration: none;
+    float: left;
+    font-size: 15px;
+    color: var(--bc-color);
+    font-weight: 600;
+}
+
+.back .back-box li a:hover{
+    color: var(--secondary-color);
+}
+
+.back .back-box p{
+    font-size: 15px;
+    padding-left: 70px;
+}
+/* back */
+
+/* wifi */
+.wifi {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.wifi .wifi-box >h1{
+    background-color: var(--bc-color-2);
+}
+
+.wifi .wifi-box h1{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.wifi .swiper{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.wifi .swiper .swiper-slide{
+    padding-bottom: 20px;
+}
+.wifi .swiper .swiper-slide:hover{
+    cursor: grab;
+    background-color: var(--bc-color-2);
+}
+
+.wifi .swiper .swiper-slide:hover:active{
+    cursor: grabbing;
+}
+
+.wifi .swiper .swiper-slide img{
+    width: 100%;
+    height: 255px;
+}
+
+.wifi .swiper .paket-desk{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.wifi .swiper .paket-desk h2{
+    font-size: 25px;
+    font-weight:600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.wifi .swiper .paket-desk h1{
+    font-size: 35px;
+    font-weight: 900;
+    color:var(--text-color-two);
+    margin-top: 5px;
+}
+
+.wifi .swiper .paket-desk h6{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.wifi .swiper .paket-desk h3{
+    font-size: 20px;
+    font-weight:500;
+    color: var(--primary-color-two);
+    margin-bottom: 8px;
+}
+
+.wifi.swiper .paket-desk p{
+    font-size: 18px;
+    font-weight:400;
+    color: black;
+    margin-bottom: 5px;
+
+}
+
+.wifi .wifi-box .swiper .swiper-slide .paket-desk .btn {
+    padding-top: 20px;
+}
+
+.wifi .wifi-box .swiper .swiper-slide .paket-desk .btn button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.wifi .wifi-box .swiper .swiper-slide .paket-desk .btn a{
+    text-decoration: none;
+    color: var(--text-color-two);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.wifi .wifi-box .swiper .swiper-slide .paket-desk .btn a:hover{
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.wifi .wifi-box .swiper .swiper-slide .paket-desk .btn button:hover{
+    background-color: var(--primary-color-two);
+}
+
+/* wifi */
+
+/* IT */
+.komputer {
+    padding-bottom: 20px;
+}
+
+.komputer .komputer-box h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+    background-color: var(--bc-color-2);
+}
+
+.komputer .komputer-box ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.komputer .komputer-box ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bc-color-2);
+    cursor: pointer;
+}
+
+.komputer .komputer-box ul li.active{
+    background-color:var(--primary-color-two);
+    color: var(--bc-color-2);
+}
+
+
+.komputer .komputer-box .all-produk{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    justify-content: center;
+
+}
+
+.komputer .komputer-box .all-produk .cpu{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+.komputer .komputer-box .all-produk .leptop{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh; 
+}
+
+.komputer .komputer-box .all-produk .kabel{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+.komputer .komputer-box .all-produk img{
+    width: 300px;
+    height: 175px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: var(--primary-color-two);
+    cursor: pointer;
+}
+
+.komputer .komputer-box .all-produk img:hover{
+    background-color: var(--primary-color);
+}
+
+.komputer .komputer-box .all-produk .cpu img{
+    width: 180px;
+    height: 230px;
+}
+
+.komputer .komputer-box .all-produk .leptop img{
+    width: 270px;
+    height: 215px;
+}
+
+.komputer .komputer-box .all-produk .kabel img{
+    width: 270px;
+    height: 210px;
+}
+/* IT */
+
+/* kontak */
+.hubungi {
+    padding-bottom: 20px;
+}
+
+.hubungi .hubungi-box{
+    display: flex;
+    gap: 5vh;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.hubungi .hubungi-box p{
+    text-align: center;
+    padding-top: 3px;
+    font-size: 23px;
+}
+
+.hubungi .hubungi-box li{
+    list-style: none;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.hubungi .hubungi-box li a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    font-size: 17px;
+    color: var(--text-color-two);
+    font-weight: 500;
+}
+
+.hubungi .hubungi-box li a:hover{
+    background-color: var(--primary-color-two);
+    color: var(--text-color);
+}
+/* kontak */
+
+/* olshop */
+.online .container{
+    width: 100%;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.online .container p{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.online .online-box{
+    padding-left: 40px;
+    display: grid;
+    gap: 2vh;
+}
+
+.online .online-box .box{
+    display: flex;
+    gap: 1vh;
+}
+
+.online .online-box .box-1{
+    display: flex;
+    gap: 1vh;
+}
+
+.online .online-box .box img{
+    width: 38px;
+    height: 35px;
+}
+
+.online .online-box .box-1 img{
+    width: 38px;
+    height: 30px;
+}
+
+.online .online-box .box a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--text-color-two);
+    font-weight: 500;
+}
+
+.online .online-box .box-1 a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--text-color-two);
+    font-weight: 500;
+}
+/* olshop */
+
+/* copyright */
+.copy .copy-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    background-color: var(--bc-color);
+    color: var(--text-color-opacity);
+    padding: 10px;
+}
+
+.copy .copy-box .box p{
+    font-size: 13px;
+}
+
+.copy .copy-box .box-1 p{
+    font-size: 13px;
+    font-weight: 100;
+    text-align: right;
+}
+.copy .copy-box .box-1 img{
+    width: 35px;
+    height: 20px;
+    float: right;
+}
+/* copyright */
+
+
+
+
+/* Media semua */
+@media (max-width: 992px) {
+    /* navbar */
+    .navbar .navbar-box .hamburger{
+        display: block;
+        position: fixed;
+        bottom: 40px;
+        right: -100px;
+        transition: all .3s ease;
+    }
+
+    .navbar .navbar-box .hamburger.btn-active{
+        right: 40px;
+    }
+
+    .navbar .navbar-box .menu {
+        position: fixed;
+        right: 40px;
+        bottom: 140px;
+        flex-direction: column;
+        text-align: right;
+        row-gap: 22px;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all .3s ease;
+        opacity: 0;
+    }
+
+    .navbar .navbar-box .menu.menu-active{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .navbar .navbar-box .menu.menu-active li a{
+        background-color: var(--primary-color-two);
+        padding: 5px 10px 5px 10px;
+        border-radius: 18px;
+    }
+
+/* -------------------------------------------------- */
+    .header{
+        padding-top: 170px;
+        min-height: 30vh;
+    }
+    .header .header-box{
+        font-size: 25px;
+    }
+    .header .header-box h1{
+        padding-bottom: 50px;
+    }
+
+/*---- ---------------------------------------------- */
+    .wifi .wifi-box h1{
+        font-size: 30px;
+    }
+/*---- ---------------------------------------------- */
+    .komputer .komputer-box h1{
+        font-size: 30px;
+    }
+    .komputer .komputer-box ul li{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 962px){
+    .komputer .komputer-box .all-produk img{
+    width: 250px;
+    height: 145px;
+    }   
+    .komputer .komputer-box .all-produk .cpu img{
+    width: 145px;
+    height: 195px;
+    }
+    .komputer .komputer-box .all-produk .leptop img{
+    width: 240px;
+    height: 172px;
+    }
+    .komputer .komputer-box .all-produk .kabel img{
+    width: 230px;
+    height: 190px;
+    }
+}
+
+@media (max-width: 775px) {
+    .wifi .wifi-box h1{
+        font-size: 26px;
+    }
+    .wifi .swiper .paket-desk h2{
+        font-size: 22px;
+    }
+    .wifi .swiper .paket-desk h1{
+        font-size: 30px;
+    }
+    .wifi .swiper .paket-desk h6{
+        font-size: 12px;
+    }
+    .wifi .swiper .paket-desk h3{
+        font-size: 17px;
+    }
+    .wifi .swiper .paket-desk p{
+        font-size: 15px;
+    }
+
+/*---- ---------------------------------------------- */
+    .komputer .komputer-box h1{
+        font-size: 26px;
+    }
+    .komputer .komputer-box ul li{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 675px) {
+    .online p{
+        font-size: 14px;
+    }
+    .online .online-box .box img{
+        width: 30px;
+        height: 22px;
+    }
+    .online .online-box .box-1 img{
+        width: 30px;
+        height: 22px;
+    }
+    .online .online-box .box a{
+        font-size: 12px;
+    }
+    .online .online-box .box-1 a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 645px){
+    .header{
+        padding-top: 120px;
+    }
+    .header .header-box{
+        font-size: 18px;
+    }
+
+/* ---------------------------------------------------- */
+    .back .back-box li a{
+        font-size: 12px;
+    }
+    .back .back-box p{
+        font-size: 12px;
+    }
+
+/*---- ---------------------------------------------- */
+    .wifi .swiper .paket-desk h2{
+        font-size: 20px;
+    }
+    .wifi .swiper .paket-desk h1{
+        font-size: 27px;
+    }
+    .wifi .swiper .paket-desk h6{
+        font-size: 11px;
+    }
+    .wifi .swiper .paket-desk h3{
+        font-size: 15px;
+    }
+    .wifi .swiper .paket-desk p{
+        font-size: 13px;
+    }
+/*---- ---------------------------------------------- */
+    .hubungi .hubungi-box li a{
+        font-size: 15px;
+    }
+    .hubungi .hubungi-box p{
+        font-size: 18px;
+    }
+/*---- ---------------------------------------------- */
+}
+
+@media (max-width: 520px){
+    .komputer .komputer-box .all-produk img{
+    width: 230px;
+    height: 125px;
+    }   
+    .komputer .komputer-box .all-produk .cpu img{
+    width: 125px;
+    height: 175px;
+    }
+    .komputer .komputer-box .all-produk .leptop img{
+    width: 220px;
+    height: 152px;
+    }
+    .komputer .komputer-box .all-produk .kabel img{
+    width: 210px;
+    height: 170px;
+    }
+}
+
+@media (max-width: 510px) {
+    .wifi .wifi-box h1{
+        font-size: 22px;
+    }
+
+/*---- ---------------------------------------------- */
+    .komputer .komputer-box h1{
+        font-size: 22px;
+    }
+    .komputer .komputer-box ul li{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 430px){
+    .komputer {
+        padding-bottom: 10px;
+    }
+    .komputer .komputer-box .all-produk img{
+    width: 130px;
+    height: 77px;
+    }   
+    .komputer .komputer-box .all-produk .cpu img{
+    width: 85px;
+    height: 125px;
+    }
+    .komputer .komputer-box .all-produk .leptop img{
+    width: 130px;
+    height: 82px;
+    }
+    .komputer .komputer-box .all-produk .kabel img{
+    width: 130px;
+    height: 90px;
+    }
+
+/*---- ---------------------------------------------- */
+    .hubungi .hubungi-box li a{
+        font-size: 12px;
+    }
+    .hubungi .hubungi-box li{
+        padding-top: 10px;
+    }
+    .hubungi .hubungi-box p{
+        font-size: 14px;
+    }
+/*---- ---------------------------------------------- */
+}
+
+@media (max-width: 391px){
+    .header{
+        padding-top: 120px;
+    }
+    .header .header-box{
+        font-size: 10px;
+    }
+    
+
+/*---- ---------------------------------------------- */
+}
+
+
+
+@media (max-width: 361px){
+    .header{
+        padding-top: 140px;
+    }
+    .header .header-box{
+        font-size: 10px;
+    }
+
+/* ----------------------------------------------------- */
+    .back .back-box li a{
+        font-size: 10px;
+    }
+    .back .back-box p{
+        font-size: 10px;
+        padding-left: 50px;
+    }
+/* ----------------------------------------------------- */
+}
+
+/* Media semua */
+
+/* media copyright */
+@media (max-width : 693px){
+    .copy .copy-box{
+        grid-template-columns: 1fr;
+    }
+    .copy .copy-box .box p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .copy .copy-box .box-1{
+        width: 55%;
+    }
+    .copy .copy-box .box-1 p{
+        text-align: right;
+        font-size: 10px;
+    }
+    .copy .copy-box .box-1 img{
+        width: 25px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 620px){
+    .copy .copy-box .box-1{
+        width: 55%;
+    }
+}
+
+@media (max-width: 450px){
+    .copy .copy-box .box-1{
+    width: 60%;
+    }
+}
+/* media copyright */

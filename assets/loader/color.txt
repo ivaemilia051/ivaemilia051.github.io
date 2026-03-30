@@ -1,0 +1,12 @@
+-color-
+
+--primary-color: #020024;
+--primary-color-two: #090979;
+--secondary-color: #00D4FF;
+--text-color: #ffffff;
+--text-color-two: #01010D;
+--text-color-opacity: #ffffff8a;
+--bc-color: #010305;
+--text-icon: #0BE30B;
+ --text-icon-two: #0645CC;
+ --text-icon-three: #EB0C40;

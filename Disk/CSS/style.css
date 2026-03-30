@@ -1,0 +1,818 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:"poppins" , sans-serif;
+}
+
+/* warna */
+:root{
+    --primary-color: #020024;
+    --primary-color-two: #090979;
+    --secondary-color: #00D4FF;
+    --text-color: #ffffff;
+    --text-color-two: #01010D;
+    --text-color-opacity: #ffffff8a;
+    --bc-color: #010305;
+    --text-icon: #0BE30B;
+    --text-icon-two: #0645CC;
+    --text-icon-three: #EB0C40;
+    --bc-color-2: #e4edef;
+}
+/* warna */
+
+/* Navbar */
+.container{
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    position: fixed;
+    z-index: 1000;
+    transition: all .3s ease;
+    background-color: var(--bc-color);
+}
+
+.navbar .navbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-box .logo img{
+    width: 55px;
+    height: 50px;
+}
+
+.navbar .navbar-box .menu{
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar .navbar-box .menu li{
+    list-style: none;
+}
+
+.navbar .navbar-box .menu li a{
+    text-decoration: none;
+    color: var(--text-color-opacity);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar.nav-scroll-active{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur (20px);
+    padding: 15px 0 15px 0;
+}
+
+.navbar .navbar-box .hamburger{
+    display: none;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar .navbar-box .hamburger .hamburger-box{
+    width: 30px;
+}
+
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner,
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner::after,
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner::before {
+    width: 30px;
+}
+
+.navbar .navbar-box .menu li a:hover{
+    color: var(--text-color);
+}
+
+.navbar.navbar.nav-scroll-active .navbar-box .logo h1{
+    color: var(--text-color);
+}
+
+.navbar.navbar.nav-scroll-active .navbar-box .menu li a{
+    color: var(--text-color);
+}
+.navbar.navbar.nav-scroll-active .navbar-box .menu li a:hover{
+    color: var(--secondary-color);
+}
+/* Navbar */
+
+/* Header */
+.header {
+    width: 100%;
+    min-height: 130vh;
+    background-image: url(../../assets/image/Background/bc-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 300px;
+    overflow: hidden;
+}
+
+.header .header-box{
+    margin-top: 15px;
+}
+
+.header .header-box .title{
+    padding-right: 90vh;
+    text-align: center;
+}
+
+.header .header-box .title p{
+    color: var(--text-color-opacity);
+    font-size: 25PX;
+}
+
+.header .header-box .title h1{
+    color: var(--text-color);
+    font-size: 55px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.header .header-box .title h2{
+    color: var(--text-color-opacity);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.header .header-box .title h3{
+    color: var(--text-color-opacity);
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10PX;
+}
+
+.header .header-box .tombol{
+    padding-left: 83vh;
+    padding-top: 50px;
+}
+
+.header .header-box .tombol li{
+    list-style: none;
+}
+
+.header .header-box .tombol li a{
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--bc-color);
+    font-weight: 600;
+}
+
+.header .header-box .tombol li a:hover{
+    background-color: var(--primary-color-two);
+    color: var(--text-color);
+}
+/* Header */
+
+/* Tentang Kami */
+.tentang{
+    width: 100%;
+    background-color: #e3e7ed;
+    padding: 50px 0 20px 0;
+}
+
+.tentang .tentang-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.tentang .tentang-box .gambar img{
+    width: 75vh;
+    height: 60vh;
+}
+
+.tentang .tentang-box .about{
+    text-align: justify;
+    padding-top: 50px;
+}
+
+.tentang .tentang-box .about h2{
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.tentang .tentang-box .about h1{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 25px 0 10px 0;
+}
+
+.tentang .tentang-box .about p{
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.tentang .tentang-box .about li{
+    list-style: none;
+}
+
+.tentang .tentang-box .about li a{
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--bc-color);
+    font-weight: 600;
+}
+
+.tentang .tentang-box .about li a:hover{
+    color: var(--text-color);
+    background-color: var(--primary-color-two);
+}
+/* Tentang Kami */
+
+/* Layanan */
+.layanan h1{
+    text-align: center;
+    padding: 25px 0 1px 0;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.layanan h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.layanan .layanan-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    column-gap: 2vh;
+    row-gap: 2vh;
+    padding : 50px 30px 30px 30px;
+
+}
+
+.layanan .layanan-box .box{
+    text-align: center;
+    background-color: #e4edef;
+    padding: 15px 0 20px 0;
+}
+
+.layanan .layanan-box .box i{
+    font-size: 35px;
+    color: var(--primary-color-two);
+    padding-bottom: 20px;
+}
+
+.layanan .layanan-box .box h2{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.layanan .layanan-box .box p{
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.layanan .layanan-box .box li{
+    list-style: none;
+}
+
+.layanan .layanan-box .box li a{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 10px ;
+    border-radius: 20px;
+    color: var(--bc-color);
+    font-weight: 600;
+}
+
+.layanan .layanan-box .box li a:hover{
+    color: var(--text-color);
+    background-color: var(--primary-color-two);
+}
+/* Layanan */
+
+/* Statistik */
+.statistik .statistik-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    background-color: var(--primary-color-two);
+    padding: 20px 10px 20px 10px;
+}
+
+.statistik .statistik-box .box{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.statistik .statistik-box .box h1{
+    color: var(--text-color);
+    font-size: 34px;
+}
+
+.statistik .statistik-box .box p{
+    color: var(--text-color-opacity);
+    font-size: 16px;
+}
+/* Statistik */
+
+/* Produk */
+.produk{
+    padding: 10px 0 15px 0;
+}
+
+.produk h1{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+}
+.produk .produk-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    padding: 30px 25px 20px 25px;
+    column-gap: 1vh;
+    row-gap: 1vh;
+}
+
+.produk .produk-box .box{
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #e4edef;
+    padding: 20px 0 20px 0;
+}
+
+.produk .produk-box .box i{
+    font-size: 35px;
+    color: var(--primary-color-two);
+}
+
+.produk .produk-box .box h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.produk .list{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.produk .list li{
+    list-style: none;
+}
+
+.produk .list a{
+    text-decoration: none;
+    color: var(--bc-color);
+    background-color: var(--secondary-color);
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.produk .list a:hover{
+    color: var(--text-color);
+    background-color: var(--primary-color-two);
+}
+/* Produk */
+
+/* Kontak */
+.kontak{
+    padding: 20px 0 20px 0;
+}
+
+.kontak .kontak-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    column-gap: 1vh;
+    row-gap: 2vh;
+}
+
+.kontak .kontak-box .box{
+    text-align: right;
+}
+
+.kontak .kontak-box .box p{
+    font-size: 23px;
+}
+
+.kontak .kontak-box .box h1{
+    font-size: 30px;
+}
+
+.kontak .kontak-box .box-1{
+    text-align: left;
+    padding-top: 19px;
+    padding-left: 30px ;
+}
+
+.kontak .kontak-box .box-1 li{
+    list-style: none;
+}
+
+.kontak .kontak-box .box-1 li a{
+    text-decoration: none;
+    color: var(--bc-color);
+    background-color: var(--secondary-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.kontak .kontak-box .box-1 li a:hover{
+    color: var(--text-color);
+    background-color: var(--primary-color-two);
+}
+/* Kontak */
+
+/* copyright */
+.copy .copy-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    background-color: var(--bc-color);
+    color: var(--text-color-opacity);
+    padding: 10px;
+}
+
+.copy .copy-box .box p{
+    font-size: 13px;
+}
+
+.copy .copy-box .box-1 p{
+    font-size: 13px;
+    font-weight: 100;
+    text-align: right;
+}
+.copy .copy-box .box-1 img{
+    width: 35px;
+    height: 20px;
+    float: right;
+}
+/* copyright */
+
+
+
+/* media semua */
+@media (max-width: 992px) {
+    /* navbar */
+    .navbar .navbar-box .hamburger{
+        display: block;
+        position: fixed;
+        bottom: 40px;
+        right: -100px;
+        transition: all .3s ease;
+    }
+
+    .navbar .navbar-box .hamburger.btn-active{
+        right: 40px;
+    }
+
+    .navbar .navbar-box .menu {
+        position: fixed;
+        right: 40px;
+        bottom: 140px;
+        flex-direction: column;
+        text-align: right;
+        row-gap: 22px;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all .3s ease;
+        opacity: 0;
+    }
+
+    .navbar .navbar-box .menu.menu-active{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .navbar .navbar-box .menu.menu-active li a{
+        background-color: var(--primary-color-two);
+        padding: 5px 10px 5px 10px;
+        border-radius: 18px;
+    }
+    /* navbar */
+
+    /* header */
+    .header{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .header .header-box .title{
+        text-align: center;
+        padding-right: 50vh;
+    }
+
+    .header .header-box .tombol{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 10vh;
+    }
+
+    .header .header-box .title p{
+        font-size: 20px;
+    }
+
+    .header .header-box .title h1{
+        font-size: 35px;
+    }
+
+    .header .header-box .title h2{
+        font-size: 20px;
+    }
+   
+    .header .header-box .title h3{
+        font-size: 20px;
+    }
+    /* header */
+
+    /* tentang */
+    .tentang .tentang-box{
+        display: grid;
+        text-align: center;
+    }
+
+    .tentang .tentang-box .gambar img{
+        width: 60vh;
+        height: 40vh;
+    }
+
+    .tentang .tentang-box .about{
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .tentang .tentang-box .about h2{
+        font-size: 20px;
+    }
+    
+    .tentang .tentang-box .about h1{
+        font-size: 30px;
+        padding: 15px 0 10px 0;
+    }
+   
+    .tentang .tentang-box .about p{
+        font-size: 16px;
+    }
+    /* tentang */
+
+    /* layanan */
+    .layanan h1{
+        font-size: 28px;
+    }
+    
+    .layanan h3{
+        font-size: 18px;
+    }
+
+    .layanan .layanan-box .box i{
+        font-size: 30px;
+    }
+
+    .layanan .layanan-box .box h2{
+        font-size: 20px;
+    }
+
+    .layanan .layanan-box .box p{
+        font-size: 15px;
+    }
+    /* layanan */
+
+    /* statistik */
+    .statistik .statistik-box .box h1{
+        font-size: 30px;
+    }
+
+    .statistik .statistik-box .box p{
+        font-size: 15px;
+    }
+    /* statistik */
+
+    /* produk */
+    .produk h1{
+        font-size: 28px;
+    }
+
+    .produk .produk-box .box i{
+        font-size: 30px;
+    }
+
+    .produk .produk-box .box h1{
+        font-size: 20px;
+    }
+    /* produk */
+}
+
+@media (max-width: 885px){
+    /* header */
+    .header .header-box .tombol{
+        padding-right: 0;
+        text-align: left;
+        padding-left: 22.5vh;
+    }
+
+    .header .header-box .title{
+        padding-right: 30vh;
+    }
+    /* header */
+}
+
+@media (max-width: 700px){
+    /* tentang */
+    .tentang .tentang-box .gambar img{
+        width: 45vh;
+        height: 30vh;
+    }
+    /* tentang */
+
+    /* statistik */
+    .statistik .statistik-box .box h1{
+        font-size: 28px;
+    }
+
+    .statistik .statistik-box .box p{
+        font-size: 13px;
+    }
+    /* statistik */
+
+    /* produk */
+    .produk h1{
+        font-size: 26px;
+    }
+
+    .produk .produk-box .box i{
+        font-size: 28px;
+    }
+
+    .produk .produk-box .box h1{
+        font-size: 18px;
+    }
+    /* produk */
+}
+
+@media (max-width : 693px){
+    .copy .copy-box{
+        grid-template-columns: 1fr;
+    }
+    .copy .copy-box .box p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .copy .copy-box .box-1{
+        width: 55%;
+    }
+    .copy .copy-box .box-1 p{
+        text-align: right;
+        font-size: 10px;
+    }
+    .copy .copy-box .box-1 img{
+        width: 25px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 675px){
+    /* header */
+    .header .header-box .title{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .header .header-box .tombol{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* header */
+
+    /* layanan */
+    .layanan h1{
+        font-size: 25px;
+    }
+
+    .layanan h3{
+        font-size: 15px;
+    }
+
+    .layanan .layanan-box .box i{
+        font-size: 28px;
+    }
+
+    .layanan .layanan-box .box h2{
+        font-size: 18px;
+    }
+
+    .layanan .layanan-box .box p{
+        font-size: 13px;
+    }
+    /* layanan */
+}
+
+@media (max-width: 605px){
+    .kontak .kontak-box .box{
+        text-align: center;
+    }
+
+    .kontak .kontak-box .box-1{
+        text-align: center;
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 620px){
+    .copy .copy-box .box-1{
+        width: 55%;
+    }
+}
+
+@media (max-width: 560px){
+    /* header */
+    .header .header-box .title p{
+        font-size: 15px;
+    }
+
+    .header .header-box .title h1{
+        font-size: 30px;
+    }
+
+    .header .header-box .title h2{
+        font-size: 15px;
+    }
+   
+    .header .header-box .title h3{
+        font-size: 15px;
+    }
+    /* header */
+
+    /* tentang */
+    .tentang .tentang-box .about h2{
+        font-size: 18px;
+    }
+    
+    .tentang .tentang-box .about h1{
+        font-size: 28px;
+        padding: 10px 0 5px 0;
+    }
+   
+    .tentang .tentang-box .about p{
+        font-size: 15px;
+    }
+
+    .tentang .tentang-box .gambar img{
+        width: 30vh;
+        height: 25vh;
+        padding-left: 25px;
+    }
+    /* tentang */
+
+    /* statistik */
+    .statistik .statistik-box .box h1{
+        font-size: 25px;
+    }
+
+    .statistik .statistik-box .box p{
+        font-size: 11px;
+    }
+    /* statistik */
+
+    /* produk */
+    .produk h1{
+        font-size: 25px;
+    }
+
+    .produk .produk-box .box i{
+        font-size: 26px;
+    }
+
+    .produk .produk-box .box h1{
+        font-size: 16px;
+    }
+    /* produk */
+
+    /* kontak */
+    .kontak .kontak-box .box p{
+    font-size: 20px;
+    }
+
+    .kontak .kontak-box .box h1{
+    font-size: 27px;
+    }
+    /* kontak */
+}
+
+@media (max-width: 450px){
+    .copy .copy-box .box-1{
+    width: 60%;
+    }
+}
+/* media semua */

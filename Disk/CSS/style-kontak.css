@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:"poppins" , sans-serif;
+}
+
+/* warna */
+:root{
+    --primary-color: #020024;
+    --primary-color-two: #090979;
+    --secondary-color: #00D4FF;
+    --text-color: #ffffff;
+    --text-color-two: #01010D;
+    --text-color-opacity: #ffffff8a;
+    --bc-color: #010305;
+    --text-icon: #0BE30B;
+    --text-icon-two: #0645CC;
+    --text-icon-three: #EB0C40;
+    --bc-color-2: #e4edef;
+}
+/* warna */
+
+/* Navbar */
+.container{
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    position: fixed;
+    z-index: 1000;
+    transition: all .3s ease;
+    background-color: var(--bc-color);
+}
+
+.navbar .navbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-box .logo img{
+    width: 55px;
+    height: 50px;
+}
+
+.navbar .navbar-box .menu{
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar .navbar-box .menu li{
+    list-style: none;
+}
+
+.navbar .navbar-box .menu li a{
+    text-decoration: none;
+    color: var(--text-color-opacity);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar.nav-scroll-active{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur (20px);
+    padding: 15px 0 15px 0;
+}
+
+.navbar .navbar-box .hamburger{
+    display: none;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar .navbar-box .hamburger .hamburger-box{
+    width: 30px;
+}
+
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner,
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner::after,
+.navbar .navbar-box .hamburger .hamburger-box .hamburger-inner::before {
+    width: 30px;
+}
+
+.navbar .navbar-box .menu li a:hover{
+    color: var(--text-color);
+}
+
+.navbar.navbar.nav-scroll-active .navbar-box .logo h1{
+    color: var(--text-color);
+}
+
+.navbar.navbar.nav-scroll-active .navbar-box .menu li a{
+    color: var(--text-color);
+}
+.navbar.navbar.nav-scroll-active .navbar-box .menu li a:hover{
+    color: var(--secondary-color);
+}
+/* Navbar */
+
+/* Header */
+.header {
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(../../assets/image/Background/kontak.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 190px;
+    overflow: hidden; 
+}
+
+.header .header-box{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 30px;
+}
+/* Header */
+
+/* back */
+.back{
+    padding: 20px;
+    background-color: var(--bc-color-3);
+}
+.back .back-box{
+    padding-top: 10px;
+}
+
+.back .back-box p{
+    font-size: 15px;
+}
+
+.back .back-box li{
+    list-style: none;
+}
+
+.back .back-box li a{
+    text-decoration: none;
+    float: left;
+    font-size: 15px;
+    color: var(--bc-color);
+    font-weight: 600;
+}
+
+.back .back-box li a:hover{
+    color: var(--secondary-color);
+}
+
+.back .back-box p{
+    font-size: 15px;
+    padding-left: 70px;
+}
+/* back */
+
+/* Maps */
+.maps{
+    padding-bottom: 50px;
+    min-height: 70vh;
+}
+
+.maps .container{
+    width: 100%;
+}
+
+.maps .maps-box{
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.maps .maps-box p{
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.maps .maps-box .box{
+    display: flex;
+    gap: 10vh;
+    text-align: justify;
+    justify-content: center;
+}
+
+.maps .maps-box .box ul{
+    padding-top: 50px;
+}
+
+.maps .maps-box .box ul li{
+    list-style: none;
+    padding-bottom: 20px;
+    font-size: 25px;
+    word-spacing: 20px;
+}
+
+.maps .maps-box .box ul li i{
+    font-size: 30px;
+}
+
+.maps .maps-box .box .fa-brands{
+    color: var(--text-icon);
+}
+
+.maps .maps-box .box .box-olshop{
+    display: flex;
+    gap: 2.9vh;
+    padding-bottom: 20px;
+}
+
+.maps .maps-box .box .box-olshop img{
+    width: 45px;
+    height: 35px;
+}
+
+.maps .maps-box .box .box-olshop a{
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--bc-color);
+}
+
+/* Maps */
+
+/* copyright */
+.copy .copy-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    background-color: var(--bc-color);
+    color: var(--text-color-opacity);
+    padding: 10px;
+}
+
+.copy .copy-box .box p{
+    font-size: 13px;
+}
+
+.copy .copy-box .box-1 p{
+    font-size: 13px;
+    font-weight: 100;
+    text-align: right;
+}
+.copy .copy-box .box-1 img{
+    width: 35px;
+    height: 20px;
+    float: right;
+}
+/* copyright */
+
+
+
+
+/* media semua */
+@media (max-width: 992px) {
+    /* navbar */
+    .navbar .navbar-box .hamburger{
+        display: block;
+        position: fixed;
+        bottom: 40px;
+        right: -100px;
+        transition: all .3s ease;
+    }
+
+    .navbar .navbar-box .hamburger.btn-active{
+        right: 40px;
+    }
+
+    .navbar .navbar-box .menu {
+        position: fixed;
+        right: 40px;
+        bottom: 140px;
+        flex-direction: column;
+        text-align: right;
+        row-gap: 22px;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all .3s ease;
+        opacity: 0;
+    }
+
+    .navbar .navbar-box .menu.menu-active{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .navbar .navbar-box .menu.menu-active li a{
+        background-color: var(--primary-color-two);
+        padding: 5px 10px 5px 10px;
+        border-radius: 18px;
+    }
+
+/* -------------------------------------------------- */
+    .header{
+        padding-top: 170px;
+        min-height: 30vh;
+    }
+    .header .header-box{
+        font-size: 25px;
+    }
+    .header .header-box h1{
+        padding-bottom: 50px;
+    }
+
+/*---- ---------------------------------------------- */
+    .maps .maps-box .box iframe{
+        width: 400px;
+        height: 350px;
+    }
+    .maps .maps-box .box{
+        gap: 7vh;
+    }
+    .maps .maps-box p{
+        font-size: 25px;
+    }
+    .maps .maps-box .box ul li{
+        font-size: 20px;
+        word-spacing: 15px;
+    }
+    .maps .maps-box .box ul li i{
+        font-size: 25px;
+    }
+    .maps .maps-box .box .box-olshop img{
+         width: 35px;
+        height: 25px;
+    }
+
+    .maps .maps-box .box .box-olshop a{
+        font-size: 20px;
+    }
+/*---- ---------------------------------------------- */
+}
+
+@media (max-width: 885px){
+    .maps .maps-box .box iframe{
+        width: 350px;
+        height: 300px;
+    }
+    .maps .maps-box .box ul li{
+        font-size: 15px;
+        word-spacing: 29px;
+    }
+    .maps .maps-box .box ul li i{
+        font-size: 20px;
+    }
+    .maps .maps-box .box .box-olshop img{
+        width: 30px;
+        height: 23px;
+    }
+
+    .maps .maps-box .box .box-olshop a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px){
+    .maps .maps-box .box iframe{
+        width: 350px;
+        height: 300px;
+    }
+    .maps .maps-box .box{
+        gap: 5vh;
+    }
+    .maps .maps-box p{
+        font-size: 20px;
+    }
+    .maps .maps-box .box ul li{
+        font-size: 15px;
+        word-spacing: 15px;
+    }
+    .maps .maps-box .box ul li i{
+        font-size: 20px;
+    }
+    .maps .maps-box .box .box-olshop img{
+        width: 30px;
+        height: 23px;
+    }
+
+    .maps .maps-box .box .box-olshop a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 645px){
+    .header{
+        padding-top: 120px;
+    }
+    .header .header-box{
+        font-size: 18px;
+    }
+
+/* ---------------------------------------------------- */
+    .back .back-box li a{
+        font-size: 12px;
+    }
+    .back .back-box p{
+        font-size: 12px;
+    }
+
+/* ---------------------------------------------------- */
+    .maps .maps-box .box iframe{
+        width: 250px;
+        height: 200px;
+    }
+    .maps .maps-box .box ul{
+        padding-top: 13px;
+    }
+    .maps .maps-box p{
+        font-size: 18px;
+        padding-bottom: 28px;
+    }
+    .maps .maps-box .box ul li{
+        font-size: 13px;
+        word-spacing: 15px;
+    }
+    .maps .maps-box .box ul li i{
+        font-size: 16px;
+    }
+    .maps .maps-box .box .box-olshop img{
+        width: 23px;
+        height: 20px;
+    }
+
+    .maps .maps-box .box .box-olshop a{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 525px){
+    .maps .maps-box{
+        padding: 5px;
+    }
+    .maps .maps-box .box{
+        display: grid;
+    }
+    .maps .maps-box .box iframe{
+        width: 380px;
+        height: 200px;
+    }
+    .maps .maps-box p{
+        font-size: 18px;
+        padding-bottom: 28px;
+    }
+    .maps .maps-box .box ul{
+        padding-top: 0;
+    }
+    .maps .maps-box .box ul li{
+        font-size: 13px;
+        word-spacing: 15px;
+        padding-bottom: 8px;
+    }
+    .maps .maps-box .box ul li i{
+        font-size: 16px;
+    }
+    .maps .maps-box .box .box-olshop{
+        padding-bottom: 8px;
+    }
+    .maps .maps-box .box .box-olshop img{
+        width: 23px;
+        height: 20px;
+    }
+
+    .maps .maps-box .box .box-olshop a{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 391px){
+    .header{
+        padding-top: 120px;
+    }
+    .header .header-box{
+        font-size: 10px;
+    }
+    
+/*---- ---------------------------------------------- */
+    .maps .maps-box p{
+        font-size: 15px;
+    }
+    .maps .maps-box .box iframe{
+        width: 300px;
+        height: 180px;
+    }
+/*---- ---------------------------------------------- */
+}
+
+@media (max-width: 361px){
+    .header{
+        padding-top: 140px;
+    }
+    .header .header-box{
+        font-size: 10px;
+    }
+
+/* ----------------------------------------------------- */
+    .back .back-box li a{
+        font-size: 10px;
+    }
+    .back .back-box p{
+        font-size: 10px;
+        padding-left: 50px;
+    }
+/* ----------------------------------------------------- */
+}
+/* media semua */
+
+
+/* media copyright */
+@media (max-width : 693px){
+    .copy .copy-box{
+        grid-template-columns: 1fr;
+    }
+    .copy .copy-box .box p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .copy .copy-box .box-1{
+        width: 55%;
+    }
+    .copy .copy-box .box-1 p{
+        text-align: right;
+        font-size: 10px;
+    }
+    .copy .copy-box .box-1 img{
+        width: 25px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 620px){
+    .copy .copy-box .box-1{
+        width: 55%;
+    }
+}
+
+@media (max-width: 450px){
+    .copy .copy-box .box-1{
+    width: 60%;
+    }
+}
+/* media copyright */
